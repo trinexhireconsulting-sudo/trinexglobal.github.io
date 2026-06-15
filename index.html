@@ -1,48 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trinex Global | HR & Consulting</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
-        header { background: #002d72; color: #fff; padding: 50px 20px; text-align: center; }
-        .container { max-width: 800px; margin: 20px auto; padding: 40px; background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h2 { color: #002d72; margin-bottom: 20px; border-bottom: 2px solid #ff7f00; display: inline-block; }
-        .contact-box { margin: 20px 0; padding: 20px; background: #f9f9f9; border-left: 5px solid #002d72; }
-        .btn { display: inline-block; padding: 15px 30px; background: #ff7f00; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
-        .social-links { margin-top: 30px; }
-        .social-links a { display: block; margin: 10px 0; color: #002d72; font-weight: bold; text-decoration: none; }
-        footer { text-align: center; padding: 20px; font-size: 0.9em; color: #777; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trinex Global | HR & Consulting</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        color: #333;
+    }
+
+    /* HERO */
+    .hero {
+        background: linear-gradient(135deg, #002d72, #0057b7);
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: #ff7f00;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    /* CONTAINER */
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    /* CARD */
+    .card {
+        background: white;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    /* GRID */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* CONTACT */
+    .contact {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .whatsapp {
+        background: #25D366;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 6px;
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #002d72;
+        color: white;
+        margin-top: 40px;
+    }
+</style>
+
 </head>
+
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
     <h1>Trinex Global</h1>
-    <p>Professional HR & Consulting Services</p>
-</header>
+    <p>Professional HR & Business Consulting Solutions</p>
+    <a class="btn" href="#contact">Get Started</a>
+</div>
 
+<!-- ABOUT -->
 <div class="container">
-    <h2>Contact Us</h2>
-    <div class="contact-box">
-        <p><strong>Phone:</strong> <a href="tel:+919318313981">+91 93183 13981</a></p>
-        <p><strong>Email:</strong> <a href="mailto:info@trinexglobal.in">info@trinexglobal.in</a></p>
+    <div class="card">
+        <h2>About Us</h2>
+        <p>
+            Trinex Global is a professional HR and consulting firm focused on recruitment,
+            talent acquisition, and business growth solutions across India.
+        </p>
     </div>
 
-    <p>Ready to work with us? Click below to fill out our inquiry form:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcdLPO-y0Wf60yPrbBT76XObEx2vVa27tPJNkLdc8HiNuXAg/viewform" class="btn" target="_blank">Open Contact Form</a>
+    <!-- SERVICES -->
+    <div class="grid">
+        <div class="card">
+            <h3>HR Recruitment</h3>
+            <p>End-to-end hiring solutions for companies and startups.</p>
+        </div>
 
-    <div class="social-links">
-        <h2>Follow Us</h2>
-        <a href="https://www.linkedin.com/in/nikhil-rathore-39a6a4311/" target="_blank">LinkedIn - Nikhil Rathore</a>
-        <a href="https://www.instagram.com/trinex_global/" target="_blank">Instagram - @trinex_global</a>
+        <div class="card">
+            <h3>Project Hiring</h3>
+            <p>Short-term and long-term professional staffing support.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consulting</h3>
+            <p>Business growth, HR strategy, and operational consulting.</p>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p><b>Phone:</b> +91 9318313981</p>
+        <p><b>Email:</b> info@trinexglobal.in</p>
+
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdcdLPO-y0Wf60yPrbBT76XObEx2vVa27tPJNkLdc8HiNuXAg/viewform" target="_blank">
+            Apply / Inquiry Form
+        </a>
+
+        <br><br>
+
+        <a class="whatsapp" href="https://wa.me/919318313981" target="_blank">
+            Chat on WhatsApp
+        </a>
     </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
-    <p>&copy; 2026 Trinex Global | All Rights Reserved</p>
+    © 2026 Trinex Global | All Rights Reserved
 </footer>
 
 </body>
